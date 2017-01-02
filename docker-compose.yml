@@ -2,7 +2,7 @@ elasticsearch:
   image: sardegnaturismo/dashboard-elasticsearch:1.7
   environment:
     NODE_NAME: "Elastic_1"
-    PLUGINS: "elasticsearch/marvel/latest,mobz/elasticsearch-head"
+    PLUGINS: "elasticsearch/marvel/latest,mobz/elasticsearch-head,org.codelibs/elasticsearch-reindexing/1.7.0"
   ports:
     - "9200:9200"
   volumes:
